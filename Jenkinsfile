@@ -26,7 +26,7 @@ pipeline {
             steps {
                 sh '''
                 docker rm -f pipe_line_lab || true
-                docker run -d -p 8081:8081 --name python-container pipe_line_lab
+                docker run -d -p 8081:8081 --name pipe_line_lab pipe_line_lab
                 '''
             }
         }
